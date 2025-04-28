@@ -87,46 +87,81 @@
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
               <h6 class="m-0 font-weight-bold text-primary">Data Siswa</h6>
               <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                  class="fas fa-download fa-sm text-white-50"></i>Unduh Tabel</a>
+                  class="fas fa-download fa-sm text-white-50"></i>Unduh Data</a>
             </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>No</th>
-                      <th>Nama</th>
-                      <th>Kelas</th>
-                      <th>Alamat</th>
-                      <th>Tanggal Lahir</th>
-                      <th>Umur</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td><a href="dataPribadi.html">John Doe</a></td>
-                      <td>12A</td>
-                      <td>Bandung</td>
-                      <td>2001-01-01</td>
-                      <td>21</td>
-                      <td class="p-2">
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm me-2">
-                          <i class="fas fa-download fa-sm text-white-50"></i>Hasil Pskotest
-                        </a>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-warning shadow-sm">
-                          <i class="fas fa-download fa-sm text-white-50"></i>asessment
-                        </a>
-                        <a href="inputlaporankonseling.html"
-                          class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm">
-                          <i class="fas fa-download fa-sm text-white-50"></i>laporan konseling
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <form>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Tanggal</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Siswa</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <fieldset class="form-group row">
+                  <legend class="col-form-label col-sm-2 float-sm-left pt-0">Kelas</legend>
+                  <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                </fieldset>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Kondisi Siswa</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <fieldset class="form-group row">
+                  <legend class="col-form-label col-sm-2 float-sm-left pt-0">Bantuan yang diberikan</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                        checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Konseling Individual
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Konsuling kelompok
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Hasil</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10 offset-sm-2">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Tindak Lanjut</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10 align-content-between">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
